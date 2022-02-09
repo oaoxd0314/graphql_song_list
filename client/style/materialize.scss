@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+// Color
+@import "components/color-variables";
+@import "components/color-classes";
+
+// Variables;
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+@import "components/badges";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/typography";
+@import "components/transitions";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+@import "components/table_of_contents";
+@import "components/sidenav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/tapTarget";
+@import "components/pulse";
+@import "components/datepicker";
+@import "components/timepicker";
+
+.collection{
+    overflow: unset;
+}
+
+.collection-item {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover{
+        background-color: #e7e7e7;
+    }
+}
+
+.material-icons {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.vote-box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.margin-none{
+    margin: 0 !important;
+}
+
+.vertical-center{
+    margin: auto 0px;
+}
+
+.functional{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    &-item{
+        display: flex;
+        position: relative;
+    }
+}
+
+
+.icon{
+    position: relative;
+    &:hover +.icon-desc{
+        visibility: visible;
+    }
+}
+
+.icon-desc{
+    position: absolute;
+    visibility: hidden;
+    border-radius: 5px;
+    background-color: #6d6d6d;
+    color: #FFF;
+    font-size: $label-font-size;
+    padding: 3px 5px;
+    white-space:nowrap;
+    top: -30px;
+    right: -40px;
+}
+
+.icon-sm{
+    font-size: 16px;
+}
