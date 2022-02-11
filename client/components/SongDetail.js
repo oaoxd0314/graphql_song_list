@@ -14,13 +14,13 @@ export default function SongDetail() {
         });
 
         const [addNewLyric, {loading: add_loading, error: add_error }] = useMutation(ADDLYRICS,{
-            onCompleted : (res) => mutationCallBack 
+            onCompleted : (res) =>{ return mutationCallBack(res)}  
         })
         const [deleteLyric,{loading: delete_loading, error: delete_error }] = useMutation(DELETELYRIC,{
-            onCompleted: (res) => mutationCallBack 
+            onCompleted : (res) =>{ return mutationCallBack(res)}  
         })
         const [likeLyric,{loading: like_loading, error: like_error }] = useMutation(LIKELYRIC,{
-            onCompleted: (res) => mutationCallBack 
+            onCompleted : (res) =>{ return mutationCallBack(res)}  
         })
 
         const onSubmit = () =>{
